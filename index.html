@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Datos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Formulario de datos</h1>
+
+    <form>
+        <label>Usuario</label>
+        <input type="text" name="usuario"><br><br>
+
+        <label>Nombres</label>
+        <input type="text" name="nombres" id="nombres"><br><br>
+
+        <label>Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos"><br><br>
+
+        <label>Contraseña</label>
+        <input type="password" name="contra"><br><br>
+
+        <label>Correo electrónico</label>
+        <input type="email" name="correo"><br><br>
+
+        <label>Edad</label>
+        <input type="number" name="edad"><br><br>
+
+        <label>Edad oficial</label>
+        <input type="number" name="edadoficial" min="18" max="65"><br><br>
+
+        <label>Puntuación</label>
+        <input type="number" name="puntuacion" min="5" max="50" step="5"><br><br>
+
+        <label>Fecha de nacimiento</label>
+        <input type="date" name="nacimiento"><br><br>
+
+        <label>Hora de nacimiento</label>
+        <input type="time" name="nacimiento"><br><br>
+
+        <label>Color favorito</label>
+        <input type="color" name="nacimiento"><br><br>
+
+        <h2>¿Quién ganó el mundial de fútbol del 2014?</h2>
+        <input type="radio" name="pais" value="Alemania"> <label style="display:inline;">Alemania</label><br>
+        <input type="radio" name="pais" value="Bolivia"> <label style="display:inline;">Bolivia</label><br>
+        <input type="radio" name="pais" value="Brasil"> <label style="display:inline;">Brasil</label><br>
+        <input type="radio" name="pais" value="Francia"> <label style="display:inline;">Francia</label><br><br>
+
+        <h2>¿Cuáles son películas de acción?</h2>
+        <input type="checkbox" name="peliculas" value="juego"> <label style="display:inline;">Juego de tronos</label><br>
+        <input type="checkbox" name="peliculas" value="rapidos"> <label style="display:inline;">Rápidos y furiosos</label><br>
+        <input type="checkbox" name="peliculas" value="interestelar"> <label style="display:inline;">Interstelar</label><br>
+        <input type="checkbox" name="peliculas" value="infierno"> <label style="display:inline;">El infierno verde</label><br>
+        <input type="checkbox" name="peliculas" value="sentencia"> <label style="display:inline;">Sentencia de muerte</label><br><br>
+
+        <label>Seleccione un archivo</label>
+        <input type="file" name="archivo" accept=".xlsx"><br><br>
+
+        <label>Seleccione un valor</label>
+        <input type="range" name="archivo" min="0" max="100" value="50"><br><br>
+
+        <button type="button" onclick="saludo()">Saludo</button>
+        <p id="mensaje"></p>
+
+        <label>Nota teórica</label>
+        <input type="number" id="nota_teorica" min="0" max="30"><br><br>
+
+        <label>Nota práctica</label>
+        <input type="number" id="nota_practica" min="0" max="70"><br><br>
+
+        <button type="button" onclick="calculo_nota()">Nota</button>
+
+        <p id="nota_sumada"></p>
+    </form>
+
+    <script src="scripformulario.js"></script>
+</body>
+</html>
